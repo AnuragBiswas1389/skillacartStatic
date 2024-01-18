@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.blackGradientSM{
+    background-image: linear-gradient(
+   rgba(0, 0, 0, 0.901),
+   rgba(0, 0, 0, 0.819),
+   rgba(0, 0, 0, 0.808) ,
+   rgba(0, 0, 0, 0.721) ,
+   rgba(0, 0, 0, 0.545),
+   rgba(0, 0, 0, 0.408),
+   rgba(0, 0, 0, 0.137) ,
+   rgba(0, 0, 0, 0))
+}
+
+.noScroll{
+   -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.featProdScroll{
+  background-image: url(../images/wood.jpg);
+}
+
+.featProdVertical1{
+  background-image: url(../images/rattan.jpg);
+}
+
+.categories{
+  background-image: url(../images/pottery.jpeg);
+}
+
+.headingGreen{
+  color: white;
+}
+
+@media (min-width: 900px){
+  .carousel{
+    height: 30rem;
+  }
+  .blackGradientSM{
+    background-color: none;
+    background-image: none;
+  }
+
+  .categories{
+    background-image: none;
+  }
+  .desktopNoBg{
+    background-color: none;
+    background-image: none;
+  }
+  .featProdScroll{
+    background-image: none;
+  }
+  .featProdVertical1{
+    background-image: none;
+  }
+  .headingGreen{
+    color: rgb(22 163 74)
+  }
+}
+
+
+/* @media (min-width: 1281px) {
+  body {
+      background-color: white;
+  }
+} */
