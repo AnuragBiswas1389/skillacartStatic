@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>skillacart</title>
 </head>
 <body>
@@ -623,175 +624,178 @@
 <!-- responsive 3 sections -->
 <section class="md:flex md:flex-row md:w-full lg:w-full lg:gap-3 justify-between ">
   <!-- section for mobile screens only -->
-<div class=" sm:hidden">
-  <section class=" pb-4 mt-0 mb-2  sm:pb-16 lg:pb-20  shadow-xl " style="background-image: url(../images/bamboo.jpg);">   
-    <div class="blackGradientSM rounded-md w-full">
-      <div class="flex flex-row justify-start " >
-          <h1 class="max-w-sm ml-2 pl-2  text-2xl mt-2 sm:text-3xl font-bold text-white">
-              Featured Products <br />
-          </h1>
-      </div>
-      <!-- featured product more button -->
-      <div class="flex flex-col items-end mr-4 mt-0 ">
-          <button class="bg-green-600 text-lg w-16 h-8 font-semibold rounded-md text-white">more</button>
-      </div>
-    </div> 
-    <!-- product section  -->
-    <div class="mx-auto max-w-screen-xl sm:overflow-hidden px-4 sm:px-10 lg:px-10 ">
-      <div class="mt-5 grid s:grid-cols-2 xs:grid-cols-1 gap-2 items-center lg:mt-16 lg:grid-cols-2 lg:ml-2 lg:gap-2">
-              <article class="relative m-auto">
-                <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48 ">
-                <a href="http://"> 
-                  <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                </a>
-                </div> 
-              </article>
-              <article class="relative m-auto">
-                  <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48">
-                    <!-- insert prduct/section view link here -->
-                    <a href="http://">
-                      <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                    </a>
-                  </div> 
-                </article>
-                <article class="relative m-auto">
-                  <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48">
-                    <a href="http://">
-                      <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                    </a>
-                  </div> 
-                </article>
-                <!-- hidden for xs screens -->
-                <article class="relative m-auto xs:hidden s:block">
-                  <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48">
-                    <a href="http://">
-                      <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                    </a>
-                  </div> 
-                </article> 
-                 <!-- add more items that will appear in medium screens  -->
-                <article class="relative m-auto hidden lg:block">
-                  <div class="aspect-square overflow-hidden  h-60 w-48 ss:w-48">
-                    <a href="http://">
-                      <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                    </a>
-                  </div> 
-                </article>
-                <!-- add more items that will appear in large screens  -->
-                <article class="relative m-auto hidden lg:block">
-                  <div class="aspect-square overflow-hidden  h-60 w-48 ss:w-48">
-                    <a href="http://">
-                      <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                    </a>
-                  </div> 
-                </article>  
-        </div>
-    </div>
-  </section>
-</div>
-  <!-- section for medium screens -->
-<div class="hidden sm:block bg-white w-full">
-    <section class=" bg-white pb-2 mt-0 mb-2 gap-2  sm:pb-2 lg:pb-2  border border-y-green-600">   
+  <div class="sm:hidden">
+    <section class=" pb-4 mt-0 mb-2  sm:pb-16 lg:pb-20  shadow-xl " style="background-image: url(../images/bamboo.jpg);">   
       <div class="blackGradientSM rounded-md w-full">
-        <div class="flex flex-row justify-between items-baseline " >
-            <h1 class=" ml-4 mt-4 sm:mt-2 headingGreen max-w-sm flex items-center-center  text-2xl sm:text-3xl font-bold text-white">
+        <div class="flex flex-row justify-start " >
+            <h1 class="max-w-sm ml-2 pl-2  text-2xl mt-2 sm:text-3xl font-bold text-white">
                 Featured Products <br />
             </h1>
-            <!-- featured product more button -->
-          <div class=" hidden sm:block  flex-col items-end mr-4 mt-0 justify-center">
-            <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">more</button>
-          </div>
         </div>
         <!-- featured product more button -->
-        <div class=" sm:hidden flex flex-col items-end mr-4 mt-0 ">
-            <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">more</button>
+        <div class="flex flex-col items-end mr-4 mt-0 ">
+            <button class="bg-green-600 text-lg w-16 h-8 font-semibold rounded-md text-white">more</button>
         </div>
-      </div>
+      </div> 
       <!-- product section  -->
-      <!-- 2cols for sm,md screens -->
-      <div class="bg-white py-2 max-w-screen-xl sm:overflow-hidden px-1">
-        <div class=" bg-white  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 items-center pb-4">
-                <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                  <div class="aspect-square overflow-hidden  h-60 w-48 ">
+      <div class="mx-auto max-w-screen-xl sm:overflow-hidden px-4 sm:px-10 lg:px-10 ">
+        <div class="mt-5 grid s:grid-cols-2 xs:grid-cols-1 gap-2 items-center lg:mt-16 lg:grid-cols-2 lg:ml-2 lg:gap-2">
+                <article class="relative m-auto">
+                  <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48 ">
                   <a href="http://"> 
                     <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
                   </a>
                   </div> 
                 </article>
-                <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
+                <article class="relative m-auto">
+                    <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48">
                       <!-- insert prduct/section view link here -->
                       <a href="http://">
                         <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
                       </a>
                     </div> 
                   </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
+                  <article class="relative m-auto">
+                    <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48">
                       <a href="http://">
                         <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
                       </a>
                     </div> 
                   </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
-                      <a href="http://">
-                        <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
-                      </a>
-                    </div> 
-                  </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
+                  <!-- hidden for xs screens -->
+                  <article class="relative m-auto xs:hidden s:block">
+                    <div class="aspect-square overflow-hidden  h-60 w-40 ss:w-48">
                       <a href="http://">
                         <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                      </a>
-                    </div> 
-                  </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
-                      <a href="http://">
-                        <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
-                      </a>
-                    </div> 
-                  </article>   
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
-                      <a href="http://">
-                        <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                      </a>
-                    </div> 
-                  </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
-                      <a href="http://">
-                        <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
-                      </a>
-                    </div> 
-                  </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl lg:hidden xl:block">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
-                      <a href="http://">
-                        <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                      </a>
-                    </div> 
-                  </article>
-                  <article class="relative m-auto rounded-md border border-green-600 shadow-xl md:hidden xl:block">
-                    <div class="aspect-square overflow-hidden  h-60 w-48">
-                      <a href="http://">
-                        <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
                       </a>
                     </div> 
                   </article> 
-         </div>
+                  <!-- add more items that will appear in medium screens  -->
+                  <article class="relative m-auto hidden lg:block">
+                    <div class="aspect-square overflow-hidden  h-60 w-48 ss:w-48">
+                      <a href="http://">
+                        <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                      </a>
+                    </div> 
+                  </article>
+                  <!-- add more items that will appear in large screens  -->
+                  <article class="relative m-auto hidden lg:block">
+                    <div class="aspect-square overflow-hidden  h-60 w-48 ss:w-48">
+                      <a href="http://">
+                        <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                      </a>
+                    </div> 
+                  </article>  
+          </div>
       </div>
     </section>
-</div>
-<!-- section for large screens -->
-<div class="hidden  lg:block bg-white">
-  <a class="w-full h-full">
-    <img src="../images/offerRect.png" class=" object-cover" style="height: 36.76rem;">
-  </a>     
-</div>
+  </div>
+  <!-- section for medium screens -->
+  <div class="hidden sm:block bg-white w-full">
+      <section class=" bg-white pb-2 mt-0 mb-2 gap-2  sm:pb-2 lg:pb-2  border border-y-green-600">   
+        <div class="blackGradientSM rounded-md w-full">
+          <div class="flex flex-row justify-between items-baseline " >
+              <h1 class=" ml-4 mt-4 sm:mt-2 headingGreen max-w-sm flex items-center-center  text-2xl sm:text-3xl font-bold text-white">
+                  Featured Products <br />
+              </h1>
+              <!-- featured product more button -->
+            <div class=" hidden sm:block  flex-col items-end mr-4 mt-0 justify-center">
+              <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">more</button>
+            </div>
+          </div>
+          <!-- featured product more button -->
+          <div class=" sm:hidden flex flex-col items-end mr-4 mt-0 ">
+              <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">more</button>
+          </div>
+        </div>
+        <!-- product section  -->
+        <!-- 2cols for sm,md screens -->
+        <div class="bg-white py-2 max-w-screen-xl sm:overflow-hidden px-1">
+          <div class=" bg-white  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 items-center pb-4">
+                    
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                    <div class="aspect-square overflow-hidden  h-60 w-48 ">
+                    <a href="http://"> 
+                      <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                    </a>
+                    </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <!-- insert prduct/section view link here -->
+                        <a href="http://">
+                          <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>   
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+
+
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl lg:hidden xl:block">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article>
+                    <article class="relative m-auto rounded-md border border-green-600 shadow-xl md:hidden xl:block">
+                      <div class="aspect-square overflow-hidden  h-60 w-48">
+                        <a href="http://">
+                          <img class="   rounded-lg h-full w-full object-cover " src="../images/Component 14.png" alt="" />
+                        </a>
+                      </div> 
+                    </article> 
+          </div>
+        </div>
+      </section>
+  </div>
+  <!-- section for large screens -->
+  <div class="hidden  lg:block bg-white">
+    <a class="w-full h-full">
+      <img src="../images/offerRect.png" class=" object-cover" style="height: 36.76rem;">
+    </a>     
+  </div>
 </section>
 <!--  -->
 <!--  -->
@@ -1492,9 +1496,12 @@
     </div>
   </div>
 </section>
-<!--  -->
-<!--  -->
-<!--  -->
+
+
+
+
+
+
 <!-- footer -->
 <footer class="mt-10">
   <footer class="bg-grey lg:grid lg:grid-cols-5">

@@ -1,9 +1,8 @@
-section<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
         <link href="output.css" rel="stylesheet">
         <title>skillacart</title>
     </head>
@@ -23,10 +22,8 @@ section<!DOCTYPE html>
                       <img src="../images/logo.svg" class="h-6">
                   </div>
               </a>
-          </div>
-      
+          </div>      
           <!-- end logo -->
-      
           <!-- search bar -->
           <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
               <div class="inline-block">
@@ -139,10 +136,10 @@ section<!DOCTYPE html>
       <!--  -->  
 </header>
 <!--  -->
-<!-- Product -->
+<!-- Product and craftsperson profile with description -->
 <section class="pt-12 sm:py-16 pb-1"> 
-  <div class="container mx-auto sm:mx-8 sm:px-10">      
-    <div class="lg:col-gap-12 xl:col-gap-16  grid grid-cols-1 gap-16  lg:gap-12:mt-12 lg:grid-cols-5 lg:gap-28">
+  <div class="container mx-auto px-0">      
+    <div class="lg:col-gap-12 xl:col-gap-16  grid grid-cols-1  lggap-12:mt-12 lg:grid-cols-5 lg:gap-16 relative">
       <!-- image slider -->
       <div class="lg:col-span-3 lg:row-end-1">
                       <!-- product image with slider -->
@@ -193,7 +190,8 @@ section<!DOCTYPE html>
                       </section>
       </div>
       
-      <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2">
+      <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2 ">
+            <div>
                       <!-- product main title -->
                       <h1 class="sm: text-2xl font-bold text-gray-900 sm:text-3xl">Canvas painting</h1>
                       <div class="mt-5 flex items-center">
@@ -274,7 +272,10 @@ section<!DOCTYPE html>
                 </ul>
 
                 <!-- craftperson for larger screens -->
-                <section class="hidden sm:block mt-10">   
+                <section class="hidden sm:block mt-10"> 
+                    <div class=" mt-3">
+                        <h1 class="max-w-sm text-3xl pb-4 font-bold text-black">Craftsperson</h1>
+                    </div> 
                     <div class="bg-gray-100 h-96 flex items-center justify-center p-2">
                     <div class="bg-white p-8 rounded-lg border border-green-600 shadow-md max-w-md w-full">
                         <!-- Banner Profile -->
@@ -328,8 +329,9 @@ section<!DOCTYPE html>
                     </div>
                 </section>
 
-
-
+                <!-- script for making it stickey -->
+                
+            </div>
       </div>
       
       <!-- craft person profile -->
@@ -390,58 +392,131 @@ section<!DOCTYPE html>
       <!-- description section -->
       <section class="lg:col-span-3 ">
         <div class="border-b border-green-600">
-                        <nav class="flex gap-4">
-                          <a href="#" title="" class="border-b-2 border-gray-900 py-4 text-sm font-medium text-gray-900 hover:border-gray-400 hover:text-gray-800"> Description </a>
-              
-                          <a href="#" title="" class="inline-flex items-center border-b-2 border-transparent py-4 text-sm font-medium text-gray-600">
-                            Reviews
-                            <span class="ml-2 block rounded-full bg-green-600 px-2 py-px text-xs font-bold text-gray-100"> 1,209 </span>
-                          </a>
-                        </nav>
+            <nav class="flex gap-4">
+              <a href="#" title="" class="border-b-2 border-gray-900 py-4 text-sm font-medium text-gray-900 hover:border-gray-400 hover:text-gray-800"> Description </a>
+               <a href="#" title="" class="inline-flex items-center border-b-2 border-transparent py-4 text-sm font-medium text-gray-600">
+                Reviews
+               <span class="ml-2 block rounded-full bg-green-600 px-2 py-px text-xs font-bold text-gray-100"> 1,209 </span>
+              </a>
+            </nav>
         </div>
         <!-- product description -->
-        <div class="mt-8 flow-root sm:mt-12 border-b border-green-600 mb-14">
-                        <h1 class="text-3xl font-bold">Delivered To Your Door</h1>
-                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium nesciunt fuga.</p>
-                        <h1 class="mt-8 text-3xl font-bold">From the Fine Farms of Brazil</h1>
-                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio numquam enim facere.</p>
-                        <p class="mt-4">Amet consectetur adipisicing elit. Optio numquam enim facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore rerum nostrum eius facere, ad neque.</p>
+        <div class="mt-8 flow-root sm:mt-12 border-b border-green-600 pb-3">
+            <h1 class="text-3xl font-bold">Delivered To Your Door</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium nesciunt fuga.</p>
+            <h1 class="mt-8 text-3xl font-bold">From the Fine Farms of Brazil</h1>
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio numquam enim facere.</p>
+            <p class="mt-4">Amet consectetur adipisicing elit. Optio numquam enim facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore rerum nostrum eius facere, ad neque.</p>
         </div>
+        <!--Overall review section -->
+        <section class=" bg-white">
+                  <!-- Reviews -->
+                  <div class="mx-auto max-w-screen-md pl-2 pr-3 pb-6 pt-7 ">
+                  <div class="flex w-full flex-col">
+                  <div class="">
+                    <h1 class="max-w-sm  text-2xl sm:text-3xl font-bold text-black">
+                      Avarage review <br />
+                    </h1>
+                  </div>
+                  <div class="text-gray-700">
+                    <ul class="mb-6 mt-2 space-y-2">
+                      <!-- average ratings section -->
+                      <li class="flex items-center text-sm font-medium">
+                        <span class="w-3">5</span>
+                        <span class="mr-4 text-yellow-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          </svg>
+                        </span>
+                        <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                          <div class="h-full w-10/12 bg-yellow-400"></div>
+                        </div>
+                        <!-- total number of 5s rating -->
+                        <span class="w-3">56</span>
+                      </li>
+                      <li class="flex items-center text-sm font-medium">
+                        <span class="w-3">4</span>
+                        <span class="mr-4 text-yellow-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                        </span>
+                        <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                          <div class="h-full w-8/12 bg-yellow-400"></div>
+                        </div>
+                        <!-- total number of 4s rating -->
+                        <span class="w-3">12</span>
+                      </li>
+                      <li class="flex items-center text-sm font-medium">
+                        <span class="w-3">3</span>
+                        <span class="mr-4 text-yellow-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          </svg>
+                        </span>
+                        <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                          <div class="h-full w-1/12 bg-yellow-400"></div>
+                        </div>
+                        <!-- total number of 3s rating -->
+                        <span class="w-3">4</span>
+                      </li>
+                      <li class="flex items-center text-sm font-medium">
+                        <span class="w-3">2</span>
+                        <span class="mr-4 text-yellow-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        </span>
+                        <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                          <div class="h-full w-0 bg-yellow-400"></div>
+                        </div>
+                        <!-- total number of 2s rating -->
+                        <span class="w-3">0</span>
+                      </li>
+                      <li class="flex items-center text-sm font-medium">
+                        <span class="w-3">1</span>
+                        <span class="mr-4 text-yellow-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        </span>
+                        <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                          <div class="h-full w-1/12 bg-yellow-400"></div>
+                        </div>
+                        <!-- total number of 1s rating -->
+                        <span class="w-3">5</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- write a review button -->
+                  <!-- <button class="w-36 rounded-full bg-green-600 py-3 text-white font-medium">Write a review</button> -->
+                </div>
+              </div>
+        </section>
       </section>
 
     </div>
   </div>
 </section>
 
-
-<section class="">
 <!-- all user uploaded photo section -->
-<section class="sm:row-start-1 md:row-start-2 ">
-  <div class="pl-4 sm:pl-10 sm:pr-10 text-left mb-2  ">
-        <div class="rounded-md w-full">
-      <div class=" mt-3 flex flex-row justify-between items-baseline " >
-          <h1 class="sm:mt-2 max-w-sm flex items-center-center  text-3xl sm:text-green-600 font-bold text-black">
-              Reviews With Photos <br />
-          </h1>
-          <!-- featured product more button -->
-        <div class="  flex-col items-end mr-2 mt-0 justify-center">
-          <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">More</button>
-        </div>
-      </div>
-      
-    </div>
+<section>
+  <div class="pl-4 sm:pl-24 text-left   ">
+    <h1 class="max-w-sm   text-2xl sm:text-3xl font-bold text-black">
+      Review with photos<br />
+    </h1>
      <!-- user uploaded review image section -->
-      <section class="flex pt-2 w-full overflow-x-auto space-x-6 noScroll sm:justify-start">
-        <section class="flex-shrink-0 rounded-md border-2 w-48 h-48 ">
+      <section class="flex pt-2 w-full overflow-x-auto space-x-6 noScroll">
+        <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
           <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png" class="bg-purple-200  alt="review image">
         </section>
-        <section class="flex-shrink-0 rounded-md border-2 w-48 h-48 ">
+        <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
           <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png" class="bg-purple-200  alt="review image">
         </section>
-        <section class="flex-shrink-0 rounded-md border-2 w-48 h-48 ">
+        <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
           <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png" class="bg-purple-200  alt="review image">
         </section>
-        <section class="flex-shrink-0 rounded-md border-2 w-48 h-48 ">
+        <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
           <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png" class="bg-purple-200  alt="review image">
         </section>
       </section>
@@ -449,15 +524,13 @@ section<!DOCTYPE html>
 </section>
 
 <!-- individual user rating section here -->
-
-<section class="grid grid-cols-1 sm:row-start-2 md:row-start-3">
+<section class="md:grid md:grid-cols-2 sm:pl-20 sm:pt-16">
 
   <!-- individual user rating section here -->
-  <section class="sm:pl-9 sm:pr-10">
-            
+  <section>        
     <div class="rounded-md w-full">
       <div class=" mt-3 flex flex-row justify-between items-baseline " >
-          <h1 class=" ml-4 mt-4 sm:mt-2 max-w-sm flex items-center-center  text-3xl sm:text-green-600 font-bold text-black">
+          <h1 class=" ml-4 mt-4 sm:mt-2 max-w-sm flex items-center-center  text-2xl sm:text-green-600 font-bold text-black">
               Reviews <br />
           </h1>
           <!-- featured product more button -->
@@ -467,226 +540,64 @@ section<!DOCTYPE html>
       </div>
       
     </div>
-    <!-- insert user rating -->
-    <section class="md:grid grid-cols-2 ">
-    <ul class="mt-1">
-        <li class="py-2 text-left border px-4 m-2 shadow-md border-green-600 rounded-md">
-          <div class="flex items-start">
-              <!-- user profile image -->
-              <img class="block h-8 w-8 max-w-full flex-shrink-0 rounded-full align-middle" src="https://componentland.com/images/Ju6-1negUEjTnBKw_ZP4r.png" alt="" />
-              <div class="ml-6 overflow-x-auto">
-              <div class="flex items-center">
-              <!-- user rating section -->
-              <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-              </svg>
-              <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-              </svg>
-              <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-                        </svg>
-                        <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-                        </svg>
-                        <svg class="block h-6 w-6 align-middle text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-                        </svg>
-                      </div>
-                      <!-- user name of the profile -->
-                      <p class="mt-1 text-sm font-bold text-gray-900  ">John Lester</p>
-                      <!-- date of the review -->
-                      <p class="mt-1 text-sm text-gray-600">March 01, 2022</p>
-                    </div>    
-                  </div>
-                  <!-- user review text here -->
-                  <section>
-                    <p class="mt-5 text-base text-gray-900 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro blanditiis sapiente ab dolores, ad dignissimos perspiciatis.</p>
+    <!-- user rating -->
+   <ul class="mt-1">
+      <li class="py-2 text-left border px-4 m-2 shadow-md border-green-600 rounded-md">
+         <div class="flex items-start">
+            <!-- user profile image -->
+            <img class="block h-8 w-8 max-w-full flex-shrink-0 rounded-full align-middle" src="https://componentland.com/images/Ju6-1negUEjTnBKw_ZP4r.png" alt="" />
+            <div class="ml-6 overflow-x-auto">
+            <div class="flex items-center">
+            <!-- user rating section -->
+            <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
+            </svg>
+            <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
+            </svg>
+            <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
+                      </svg>
+                      <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
+                      </svg>
+                      <svg class="block h-6 w-6 align-middle text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
+                      </svg>
+                    </div>
+                    <!-- user name of the profile -->
+                    <p class="mt-1 text-sm font-bold text-gray-900  ">John Lester</p>
+                    <!-- date of the review -->
+                    <p class="mt-1 text-sm text-gray-600">March 01, 2022</p>
+                  </div>    
+                </div>
+                <!-- user review text here -->
+                <section>
+                  <p class="mt-5 text-base text-gray-900 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro blanditiis sapiente ab dolores, ad dignissimos perspiciatis.</p>
+                </section>
+                <!-- user uploaded review image section -->
+                <section class="flex pt-2 w-full overflow-x-auto space-x-6 noScroll ">
+                  <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
+                    <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"   alt="review image">
                   </section>
-                  <!-- user uploaded review image section -->
-                  <section class="flex pt-2 w-full overflow-x-auto space-x-6 noScroll ">
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"   alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"   alt="review image">
-                    </section>  
+                  <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
+                    <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
                   </section>
-                </li>
-    </ul> 
-    <ul class="mt-1">
-        <li class="py-2 text-left border px-4 m-2 shadow-md border-green-600 rounded-md">
-          <div class="flex items-start">
-              <!-- user profile image -->
-              <img class="block h-8 w-8 max-w-full flex-shrink-0 rounded-full align-middle" src="https://componentland.com/images/Ju6-1negUEjTnBKw_ZP4r.png" alt="" />
-              <div class="ml-6 overflow-x-auto">
-              <div class="flex items-center">
-              <!-- user rating section -->
-              <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-              </svg>
-              <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-              </svg>
-              <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-                        </svg>
-                        <svg class="block h-6 w-6 align-middle text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-                        </svg>
-                        <svg class="block h-6 w-6 align-middle text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" class=""></path>
-                        </svg>
-                      </div>
-                      <!-- user name of the profile -->
-                      <p class="mt-1 text-sm font-bold text-gray-900  ">John Lester</p>
-                      <!-- date of the review -->
-                      <p class="mt-1 text-sm text-gray-600">March 01, 2022</p>
-                    </div>    
-                  </div>
-                  <!-- user review text here -->
-                  <section>
-                    <p class="mt-5 text-base text-gray-900 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro blanditiis sapiente ab dolores, ad dignissimos perspiciatis.</p>
+                  <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
+                    <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
                   </section>
-                  <!-- user uploaded review image section -->
-                  <section class="flex pt-2 w-full overflow-x-auto space-x-6 noScroll ">
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"   alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
-                    </section>
-                    <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
-                      <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"   alt="review image">
-                    </section>  
+                  <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
+                    <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"  alt="review image">
                   </section>
-                </li>
-    </ul> 
-  </section>
+                  <section class="flex-shrink-0 rounded-md border-2 w-40 h-40 ">
+                    <img src="https://componentland.com/images/JHxMnVrtPMdcNU1s_7g7f.png"   alt="review image">
+                  </section>  
+                </section>
+              </li>
+    </ul>    
   </section> 
-  
  
 </section>
-
-<section class="featProdVertical1 pb-4 mt-2 mb-2  sm:pb-6  shadow-xl sm:border-y  " >   
-  <div class="blackGradientSM rounded-md w-full">
-    <div class="flex flex-row justify-between items-baseline " >
-        <h1 class=" sm:pl-9 sm:pr-10 ml-3 mt-4 headingGreen max-w-sm flex items-center-center  text-3xl sm:text-3xl font-bold text-white">
-            Featured Products <br />
-        </h1>
-        <!-- featured product more button -->
-      <div class=" hidden flex sm:block  flex-col items-end mr-4 mt-0 justify-center">
-        <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">more</button>
-      </div>
-    </div>
-    <!-- featured product more button -->
-    <div class="block sm:hidden flex flex-col items-end mr-4 mt-0 ">
-        <button class="bg-green-600 text-lg w-16 h-8 font-bold rounded-md text-white">more</button>
-    </div>
-  </div>
-  <!-- product section  -->
-  <div class="mx-auto sm:mx-0 w-full sm:overflow-hidden px-4 ">
-    <div class="mt-5 grid s:grid-cols-2 xs:grid-cols-1 sm:flex sm:flex-row sm:justify-evenly gap-2 items-center">
-            <article class="relative m-auto">
-              <div class="aspect-square overflow-hidden  h-60 w-40 sm:w-48 ss:w-48">
-              <a href="http://"> 
-                <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-              </a>
-              </div> 
-            </article>
-            <article class="relative m-auto">
-                <div class="aspect-square overflow-hidden  h-60 w-40 sm:w-48 ss:w-48">
-                  <!-- insert prduct/section view link here -->
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article>
-              <article class="relative m-auto">
-                <div class="aspect-square overflow-hidden  h-60 w-40 sm:w-48 ss:w-48">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article>
-              <!-- hidden for xs screens -->
-              <article class="relative m-auto xs:hidden s:block ">
-                <div class="aspect-square overflow-hidden  h-60 w-40 sm:w-48 ss:w-48">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article> 
-               <!-- add more items that will appear in medium screens  -->
-              <article class="relative m-auto hidden lg:block">
-                <div class="aspect-square overflow-hidden  h-60 w-48 ss:w-48">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article>
-              <!-- add more items that will appear in large screens  -->
-              <article class="relative m-auto hidden lg:block ">
-                <div class="aspect-square overflow-hidden  h-60 w-48 ">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article> 
-               <!-- items for extra lage screens  -->
-              <article class="relative m-auto hidden xl:block ">
-                <div class="aspect-square overflow-hidden  h-60 w-48">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article> 
-              <article class="relative m-auto hidden 2xl:block ">
-                <div class="aspect-square overflow-hidden  h-60 w-48">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article>
-              <article class="relative m-auto hidden 2xl:block ">
-                <div class="aspect-square overflow-hidden  h-60 w-48">
-                  <a href="http://">
-                    <img class="  group-hover:scale-125 rounded-lg h-full w-full object-cover transition-all duration-300" src="../images/Component 14.png" alt="" />
-                  </a>
-                </div> 
-              </article> 
-      </div>
-  </div>
-</section>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- footer -->
