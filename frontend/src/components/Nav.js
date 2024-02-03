@@ -3,7 +3,7 @@ function Nav(props) {
   return (
     <nav>
       {/* // Large screen search component  and header */}
-      <nav className=" z-10 bg-green-600 h-16 sm:fixed  top-0 w-full flex justify-between items-center mx-auto  -2 pt-2 sm:pb-2 ">
+      <nav className=" z-50 bg-green-600 h-16 sm:fixed  top-0 w-full flex justify-between items-center mx-auto  -2 pt-2 sm:pb-2 ">
         {/*<!-- logo --> */}
         <div className="inline-flex">
           <a className="_o6689fn" href="/">

@@ -3,7 +3,7 @@ function PromoImg(props) {
        
     <section className="mb-2 sm:hidden">
     <a>
-        <img src="/assets/images/image.webp"></img>
+        <img src={props.src} alt={props.alt}></img>
     </a>
     </section>
     )

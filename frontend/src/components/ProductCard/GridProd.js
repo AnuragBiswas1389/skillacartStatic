@@ -3,7 +3,7 @@ function GridProd(props) {
   
     return (
       <article
-        className={`relative border border-green-600 p-1 shadow-lg rounded-md 
+        className={`relative border border-green-600 p-1 shadow-lg rounded-md mx-auto
         ${
           props.Display ? "sm:w-60" : "w-50"
         }`}

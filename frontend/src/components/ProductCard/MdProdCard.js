@@ -5,21 +5,19 @@ function MdProdCard(props) {
   } else {
     dimension = props.dimension;
   }
-  console.log(dimension)
+  console.log(dimension);
   return (
     <div
       className={`relative m-auto rounded-md shadow-xl 
-      ${
-        props.border ? "border border-green-600 " : " "
-      }  
-      ${props.ParentClassName}`}
+      ${props.border ? "border border-green-600 " : " "}  
+      ${props.ParentClassName} ${props.parentClassName}`}
     >
       <div className={`aspect-square overflow-hidden ${dimension}`}>
-        <a href="http://">
+        <a href={`${props.link}`}>
           <img
             className="rounded-lg h-full w-full object-cover"
-            src="/assets/images/Component 14.png"
-            alt=""
+            src={`${props.src}`}
+            alt={`${props.alt}`}
           ></img>
         </a>
       </div>

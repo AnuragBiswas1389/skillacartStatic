@@ -2,7 +2,7 @@ import '../App.css'
 
 import Nav from "../components/Nav";
 import LgCateContainer from "../components/Categories/LgCateContainer";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel/Carousel";
 import SmCateContainer from "../components/Categories/SmCateContainer";
 import SmScroll from "../components/FeatProdts/SmScroll";
 import PromoImg from "../components/Promotion/PromoImg";
@@ -12,6 +12,7 @@ import MdProdCard from "../components/ProductCard/MdProdCard";
 import LgImg from "../components/Promotion/LgImg";
 import GridProd from "../components/ProductCard/GridProd";
 import RespImg from "../components/Promotion/RespImg";
+import GridHeader from '../components/Header/GridHeader';
 
 import Footer from "../components/Footer/Footer";
 
@@ -20,37 +21,47 @@ function Home() {
     <div>
       <Nav></Nav>
       <LgCateContainer></LgCateContainer>
-      <Carousel />
-      <SmCateContainer></SmCateContainer>
+      <Carousel isRounded={false} autoPlay={true}></Carousel>
+      <SmCateContainer backgroundImage="bamboo.jpg"></SmCateContainer>
       <SmScroll></SmScroll>
-      <PromoImg></PromoImg>
-      <SmVerticle></SmVerticle>
+      <PromoImg
+        src="/assets/images/image.webp"
+        alt="skillacart at skillacart"
+      ></PromoImg>
+      <SmVerticle title="Featured Products"></SmVerticle>
 
       <section class="md:flex md:flex-row md:w-full lg:w-full lg:gap-3 justify-between ">
         {/* implement some conditional logic here!! */}
         <div class="sm:hidden">
-          <SmVerticle></SmVerticle>
+          <SmVerticle title="Trending Products"></SmVerticle>
         </div>
+
         {/* implement some conditional login here!! */}
         <div class="hidden sm:block bg-white w-full border border-y-green-600">
-          <SectionHeader></SectionHeader>
+          <SectionHeader title="Specially For You"></SectionHeader>
           <div class="bg-white py-2 max-w-screen-xl sm:overflow-hidden px-1">
             <div class=" bg-white  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 items-center pb-4">
               {/* for all screens*/}
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
-              <MdProdCard></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
+              <MdProdCard src="/assets/images/Component 14.png"></MdProdCard>
 
               {/* pass class lg:hidden xl:block */}
-              <MdProdCard ParentClassName="lg:hidden xl:block"></MdProdCard>
+              <MdProdCard
+                ParentClassName="lg:hidden xl:block"
+                src="/assets/images/Component 14.png"
+              ></MdProdCard>
 
               {/* pass class md:hidden xl:block */}
-              <MdProdCard ParentClassName="md:hidden xl:block"></MdProdCard>
+              <MdProdCard
+                ParentClassName="md:hidden xl:block"
+                src="/assets/images/Component 14.png"
+              ></MdProdCard>
             </div>
           </div>
         </div>
@@ -61,7 +72,7 @@ function Home() {
 
       {/* featured product gird */}
       <section className=" bg-white pb-2 sm:pb-2 mt-0  lg:pb-6  shadow-xl mb-0">
-        <SectionHeader></SectionHeader>
+        <SectionHeader title="New Arrivals"></SectionHeader>
         <div class=" bg-white mx-auto max-w-screen-xl px-4 sm:px-4 lg:px-4 ">
           <div class="mt-5 grid s:grid-cols-2 xs:grid-cols-1 gap-2 items-center lg:mt-5 sm:grid-cols-4 lg:grid-cols-6 lg:gap-2">
             <GridProd />
@@ -146,13 +157,10 @@ function Home() {
       <section class="bg-white py-12 text-gray-700 sm:py-9 ">
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-md text-center">
-            <h2 class=" text-2xl font-bold sm:text-3xl">
-              Our featured Aroma Range
-            </h2>
-            <p class="mt-4 text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
-              faucibus massa dignissim tempus.
-            </p>
+            <GridHeader
+              genericTitle={true}
+              text="Selected products with love"
+            ></GridHeader>
           </div>
           <div class="mt-10 mx-auto grid s:grid-cols-2 xs:grid-cols-1 items-center gap-2 md:grid-cols-3 lg:mt-16 lg:grid-cols-4 lg:gap-4">
             <GridProd Display={true} />
