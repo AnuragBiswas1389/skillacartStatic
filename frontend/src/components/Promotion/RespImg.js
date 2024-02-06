@@ -1,4 +1,11 @@
 function RespImg(props) {
+
+  let loadSkeleton = "";
+
+
+
+
+
     return (
       <section className="w-full sm:w-96">
         <a href="#" className="group relative block">

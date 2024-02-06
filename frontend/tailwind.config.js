@@ -30,7 +30,7 @@ module.exports = {
         orange: "#EF5B0C",
       },
     },
+   
   },
   plugins: [],
 };
-

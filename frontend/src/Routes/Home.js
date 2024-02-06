@@ -1,4 +1,6 @@
-import '../App.css'
+import "../App.css";
+
+import { useState, useEffect } from "react";
 
 import Nav from "../components/Nav";
 import LgCateContainer from "../components/Categories/LgCateContainer";
@@ -12,24 +14,39 @@ import MdProdCard from "../components/ProductCard/MdProdCard";
 import LgImg from "../components/Promotion/LgImg";
 import GridProd from "../components/ProductCard/GridProd";
 import RespImg from "../components/Promotion/RespImg";
-import GridHeader from '../components/Header/GridHeader';
+import GridHeader from "../components/Header/GridHeader";
 
 import Footer from "../components/Footer/Footer";
+import OfferSlider from "../components/Carousel/OfferSlider";
 
 function Home() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/api/categories")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setPosts(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <div>
       <Nav></Nav>
       <LgCateContainer></LgCateContainer>
       <Carousel isRounded={false} autoPlay={true}></Carousel>
-      <SmCateContainer backgroundImage="bamboo.jpg"></SmCateContainer>
-      <SmScroll></SmScroll>
+      <SmCateContainer></SmCateContainer>
+      <SmScroll title="New Products"></SmScroll>
       <PromoImg
         src="/assets/images/image.webp"
         alt="skillacart at skillacart"
       ></PromoImg>
       <SmVerticle title="Featured Products"></SmVerticle>
-
+      <OfferSlider autoPlay={true} effect="slide"></OfferSlider>
       <section class="md:flex md:flex-row md:w-full lg:w-full lg:gap-3 justify-between ">
         {/* implement some conditional logic here!! */}
         <div class="sm:hidden">

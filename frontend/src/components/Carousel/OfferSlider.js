@@ -16,7 +16,7 @@ import "./CarouselStyle.css";
 // import required modules
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
-export default function Carousel(props) {
+export default function OfferSlider(props) {
   const [carouselData, setCarousel] = useState([]);
   const [isError, setError] = useState(false);
   const [isLoaded, setLoad] = useState(false);
@@ -99,10 +99,7 @@ export default function Carousel(props) {
         spaceBetween={50}
         centeredSlides={true}
         autoplay={config}
-        pagination={{
-          clickable: true,
-        }}
-        effect={"fade"}
+        effect={props.effect}
         fadeEffect={{
           crossFade: true,
         }}
@@ -114,9 +111,8 @@ export default function Carousel(props) {
           return (
             <SwiperSlide>
               <div
-                className={`w-full ${
-                  props.forProduct ? " h-80 sm:h-96 " : "h-[18rem] sm:h-[30rem]"
-                }`}
+                className={`w-full `}
+                style={{ height: "30rem", width: "95%" }}
               >
                 <Link to={item.href}>
                   <LazyLoadImage
@@ -126,9 +122,10 @@ export default function Carousel(props) {
                     height="100%"
                     placeholderSrc={item.placeholder}
                     style={{
-                      borderRadius: borderRadius,
+                      borderRadius: "0.28rem",
                       width: "100%",
                       height: "100%",
+                      objectFit: "cover",
                     }}
                   />
                 </Link>
@@ -158,7 +155,7 @@ export default function Carousel(props) {
 
            llllll ${
                   props.forProduct ? " h-80 sm:h-96 " : "h-64 sm:h-80"
-            lll    }
+                }
           >
             <LazyLoadImage
               src="/assets/banner/banner3.jpg"
